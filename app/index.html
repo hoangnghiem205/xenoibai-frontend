@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Xe Nội Bài 365</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/header.css">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="./assets/css/style_responsive.css">
+	<link rel="stylesheet" href="./assets/css/font-awesome.css">
+	<link rel="stylesheet" href="./assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="./assets/css/jquery.bxslider.css">
+	<link rel="stylesheet" href="./assets/css/horizontal-parallax.css">
+	<link rel="stylesheet" href="./assets/css/notifIt.css" />
+	<link rel="stylesheet" href="./assets/css/isky.css" />
+</head>
+
+<body>
+	<div class="top">
+		<div class="container">
+			<div class="row-fluid">
+				<h1 class="span3">&nbsp;</h1>
+				<ul id="loginbar" class="loginbar inline pull-right">
+					<li>
+						<i class="icon-phone-sign"></i> (04) 35.666.000
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="#" title="Taxi noi bai">
+					<images id="logo-header" src="assets/images/logo.png" alt="Taxi noi bai" />
+				</a>
+			</div>
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li><a href="#/home" title="Trang chủ">Trang chủ</a></li>
+							<li><a href="#/price" title="Bảng giá">Bảng giá</a></li>
+							<li><a href="#/cars" title="Loại xe">Loại xe</a></li>
+							<li><a href="#/contact" title="Liên hệ">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+	<div ng-view></div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span4">
+					<div class="headline">
+						<h3>Giới thiệu</h3>
+					</div>
+					<p class="margin-bottom-25">
+						Taxi Nội Bài là dịch vụ taxi sân bay trọn gói giá rẻ của công ty CP Dịch Vụ &amp; Vận Tải Taxi Nội Bài. Tuyến Hà Nội - Nội
+						Bài chỉ 150.000đ (đã bao gồm phí cầu phà, bến bãi và hóa đơn tài chính)</p>
+				</div>
+				<div class="span4">
+					<div class="headline">
+						<h3>Nhận mail khuyến mãi</h3>
+					</div>
+					<p>Hãy đăng ký để nhận được email thông báo mỗi khi Taxi Nội Bài có chương trình khuyến mãi lớn.</p>
+					<form class="form-inline">
+						<div class="input-append">
+							<input value="" name="EMAIL" id="mce-EMAIL" type="email" placeholder="Địa chỉ email" class="input-medium" required="">
+							<button class="btn-u btn-u-orange" name="subscribe" id="mc-embedded-subscribe">Đăng ký</button>
+						</div>
+					</form>
+				</div>
+				<div class="span4">
+					<!-- Monthly Newsletter -->
+					<div class="headline display-block">
+						<h3>Liên hệ</h3>
+					</div>
+					<ul class="unstyled who margin-bottom-20">
+						<li><a href="#" title="Số 45 Nguyễn Trãi, Q. Thanh Xuân, HN"><i class="icon-home"></i>Số 45 Nguyễn Trãi, Quận Thanh Xuân, HN</a></li>
+						<li><a href="#" title="Taxi noi bai"><i class="icon-envelope-alt"></i>info@taxinoibai.net</a></li>
+						<li><i class="icon-phone-sign"></i>(04) 35.666.000</li>
+						<li><i class="icon-info-sign"></i>(04) 35.666.000</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="text-bot">
+					Bản quyền thuộc về Xe Nội Bài 365 © 2016
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="app.js"></script>
+	<script src="home/home.js"></script>
+	<script src="contact/contact.js"></script>
+  <script src="cars/cars.js"></script>
+	<script src="price/price.js"></script>
+	<script src="components/version/version.js"></script>
+	<script src="components/version/version-directive.js"></script>
+	<script src="components/version/interpolate-filter.js"></script>
+
+	<!-- JS Global Compulsory -->
+	<script type="text/javascript" src="assets/js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<!-- JS Implementing Plugins -->
+	<script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="assets/js/sequence.jquery-min.js"></script>
+	<script type="text/javascript" src="assets/js/horizontal-parallax.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="assets/js/notifIt.js"></script>
+	<!-- JS Page Level -->
+	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="assets/js/isky.js"></script>
+</body>
+
+</html>

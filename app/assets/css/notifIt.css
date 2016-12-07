@@ -1,0 +1,46 @@
+#ui_notifIt{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+#ui_notifIt p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Color setup */
+/* Configure this if you want */
+.success{
+    background-color: yellowgreen;
+    color: white;
+    z-index: 9999;
+}
+.error{
+    background-color: orangered;
+    color: white;
+    z-index: 9999;
+}
+.warning{
+    background-color: orange;
+    color: white;
+    z-index: 9999;
+}
+.infor{
+    background-color: deepskyblue;
+    color: white;
+    z-index: 9999;
+}
+.default{
+    background-color: #EEE;
+    color: #444;
+    z-index: 9999;
+}
