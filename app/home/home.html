@@ -104,13 +104,13 @@
 				<h3>Dịch vụ Taxi Nội Bài giá rẻ</h3>
 			</div>
 			<ul id="mobile-hidden3" class="nav nav-tabs tabs display-block">
-				<li class="active"><a href="#profile" data-toggle="tab">Tuyến Hà Nội - Nội Bài</a></li>
-				<li class=""><a href="#messages" data-toggle="tab">Tuyến Nội Bài Hà Nội</a></li>
-				<li class=""><a href="#settings" data-toggle="tab">Các tuyến đi tỉnh khác</a></li>
+				<li ng-click="showTab(1)" ng-class="{'active': showTab1}"><a data-toggle="tab">Tuyến Hà Nội - Nội Bài</a></li>
+				<li ng-click="showTab(2)" ng-class="{'active': showTab2}"><a data-toggle="tab">Tuyến Nội Bài Hà Nội</a></li>
+				<li ng-click="showTab(3)" ng-class="{'active': showTab3}"><a data-toggle="tab">Các tuyến đi tỉnh khác</a></li>
 			</ul>
 			<!--/tabs-->
 			<div id="mobile-hidden2" class="tab-content margin-bottom-20 display-block">
-				<div class="tab-pane active" id="profile">
+				<div class="tab-pane" ng-class="{'active': showTab1}" id="profile">
 					<h4>Tuyến Hà Nội - Nội Bài</h4>
 					<p><img class="pull-left lft-img-margin img-width-200" src="assets/images/work3.jpg" alt="">Xe taxi Nội Bài giảm giá chiều
 						Hà Nội - Nội Bài trọn gói chỉ với 200.000đ (đơn giá áp dụng cho 4 quận nội thành bao gồm Tây Hồ, Hoàn Kiếm, Ba Đình,
@@ -118,7 +118,7 @@
 						trên, để có thông tin chính xác cho những địa điểm khác, quý khách hàng vui lòng gọi tổng đài taxi Nội Bài trực 24h
 						số (04) 35.666.000 để biết thêm chi tiết.</p>
 				</div>
-				<div class="tab-pane" id="messages">
+				<div class="tab-pane" ng-class="{'active': showTab2}" id="messages">
 					<h4>Tuyến Nội Bài - Hà Nội</h4>
 					<p><img class="pull-left lft-img-margin img-width-200" src="assets/images/work2.jpg" alt="">Xe taxi sân bay Nội Bài giảm
 						giá chiều Nội Bài - Hà Nội trọn gói chỉ còn 300.000đ (đơn giá áp dụng cho 4 quận nội thành bao gồm Tây Hồ, Hoàn Kiếm,
@@ -127,7 +127,7 @@
 						với đơn giá áp dụng như trên, để có thông tin chính xác cho những địa điểm khác, quý khách hàng vui lòng gọi tổng đài
 						taxi Nội Bài trực 24h số (04) 35.666.000 để biết thêm chi tiết.</p>
 				</div>
-				<div class="tab-pane" id="settings">
+				<div class="tab-pane" ng-class="{'active': showTab3}" id="settings">
 					<h4>Các tuyến đi tỉnh khác</h4>
 					<p><img class="pull-left lft-img-margin img-width-200" src="assets/images/work4.jpg" alt="">Ngoài tuyến Hà Nội - Nội Bài
 						và Nội Bài - Hà Nội, taxi Nội Bài còn triển khai taxi đi tỉnh trọn gói giá rẻ. Xuất phát từ sân bay Nội Bài hoặc Hà
